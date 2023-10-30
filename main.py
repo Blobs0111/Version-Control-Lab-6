@@ -32,7 +32,8 @@ if __name__ == '__main__':
             print("Your password has been encoded and stored!\n")
 
         elif(inputs == 2):
-            decode(password)
+            print("The encoded password is " + password + ", and the original password is " + decode(password) + ".\n")
+
 
         elif(inputs == 3):
             break
