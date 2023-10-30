@@ -10,8 +10,11 @@ def encode(password):
 
 # The decode function takes in an encoded password and returns the original password.
 def decode(password):
-    pass
+	decoded = ''
+	for i in password:
+        	decoded = decoded + str((int(i)-3))
 
+	return decoded
 
 if __name__ == '__main__':
     password = ""
@@ -33,3 +36,5 @@ if __name__ == '__main__':
 
         elif(inputs == 3):
             break
+
+
